@@ -40,11 +40,11 @@ table.update-tbl {
   width: 50%;
 }
 .right {
-  background-color: #a8a8a8;
+  background-color: #d3d3d3;
   width: 50%;
 }
 .bottom {
-  background-color: #d3d3d3;
+  background-color: #a8a8a8;
   width: 100%;
   text-align: center;
   padding-top: 5%;
@@ -60,7 +60,7 @@ table.update-tbl {
   background-color: #bdbdbd;
 }
 .row-odd {
-  background-color: #a8a8a8;
+  background-color: #d3d3d3;
 }
 .rank {
   width: 50%;
