@@ -1,6 +1,7 @@
 body {
   font-family: 'Helvetica', sans-serif;
   font-size: 12px;
+  background-color: #e9e9e9;  
 }
 td.rank-data {
   text-align: left;
@@ -35,15 +36,15 @@ table.update-tbl {
   text-align: center;
 }
 .left {
-  background-color: #C1E05A;
+  background-color: #bdbdbd;
   width: 50%;
 }
 .right {
-  background-color: #F7AC0C;
+  background-color: #a8a8a8;
   width: 50%;
 }
 .bottom {
-  background-color: #FFEDC2;
+  background-color: #d3d3d3;
   width: 100%;
   text-align: center;
   padding-top: 5%;
@@ -56,10 +57,10 @@ table.update-tbl {
   display: none;
 }
 .row-even {
-  background-color: #C1E05A;
+  background-color: #bdbdbd;
 }
 .row-odd {
-  background-color: #F7AC0C;
+  background-color: #a8a8a8;
 }
 .rank {
   width: 50%;
