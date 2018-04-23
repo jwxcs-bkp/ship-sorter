@@ -74,7 +74,7 @@ function _getDataset(choiceCategory, limit) {
     }
     xmlhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
-        dataset = (this.responseText||"").split("|");
+        dataset = (this.responseText||"").split("#");
         start(limit);
       }
     };
