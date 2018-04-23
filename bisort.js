@@ -78,7 +78,7 @@ function _getDataset(choiceCategory, limit) {
         start(limit);
       }
     };
-    xmlhttp.open("GET","./dataset-" + choiceCategory + ".php", true);
+    xmlhttp.open("GET","./data-set-" + choiceCategory + ".php", true);
     xmlhttp.send();
     $("#loading").removeClass("no-display");
 }
