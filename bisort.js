@@ -113,19 +113,20 @@ function displayQuestion(q) {
     aVal = dataset[q.a].split(": ");
     bVal = dataset[q.b].split(": ");
 
-    $("#left").text(aVal[0]);
-    $("#right").text(bVal[0]);
+    aHtml = aVal[0];
+    bHtml = bVal[0];
 
     if (aVal.length > 1) {
-        $("#left-desc").text(aVal[1]);
-    } else {
-        $("#left-desc").text("");
+       aHtml += "<br /><small>" + aVal[1] + "</small>";
     }
+
     if (bVal.length > 1) {
-        $("#right-desc").text(bVal[1]);
-    } else {
-        $("#right-desc").text("");
+       bHtml += "<br /><small>" + bVal[1] + "</small>";
     }
+
+    $("#left").html(aHtml);
+    $("#right").html(bHtml)
+
 }
 
 function chooseLeft() {
