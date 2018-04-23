@@ -55,9 +55,8 @@ function PrefList(n, limit) {
     }
 }
 
-var t, c = 0, q;
+var t, c = 0, q = null;
 var dataset = [1,2];
-
 
 function choose(choiceCategory, limit) {
     _getDataset(choiceCategory, limit);
@@ -187,6 +186,7 @@ function updateResults(isFinal) {
     if (isFinal) { 
         descriptor = "Final"
         details = "<h3>It took you " + c + " questions to sort your top " + limit + " from " + dataset.length + " items.</h3>";
+        details += "<button onclick='location.reload()' type='button'>Back to Main Page</button>";
         $("#comparison").addClass("no-display");
     }
     $("#update").html("<h2>" + descriptor + " Ranking</h2>" + html + details);
