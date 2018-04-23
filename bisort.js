@@ -59,11 +59,11 @@ var t, c = 0, q;
 var dataset = [1,2];
 
 
-function choose(limit, choiceCategory) {
-    _getDataset(limit, choiceCategory);
+function choose(choiceCategory, limit) {
+    _getDataset(choiceCategory, limit);
 }
 
-function _getDataset(limit, choiceCategory) {
+function _getDataset(choiceCategory, limit) {
 
     if (window.XMLHttpRequest) {
       // code for IE7+, Firefox, Chrome, Opera, Safari
