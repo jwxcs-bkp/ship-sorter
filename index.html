@@ -10,21 +10,35 @@
       <h1>Hi.</h1>
 
       <div id="info">
-        <button onClick="start(5)" type="button">Get Top 5</button>
-        <button onClick="start(10)" type="button">Get Top 10</button>
-        <button onClick="start()" type="button">Rank All Items</button>
+        <div class="basic">
+          <h5>Basic: Just your standard two-person ships</h5>
+          <button onClick="choose('basic', 5)" type="button">Get Top 5</button>
+          <button onClick="choose('basic', 10)" type="button">Get Top 10</button>
+          <button onClick="choose('basic')" type="button">Rank All Items</button>
+        </div>
+        <div class="extended">
+          <h5>Extended: two-person and three-person ships, xEveryones, and OT7</h5>
+          <button onClick="choose('extended', 5)" type="button">Get Top 5</button>
+          <button onClick="choose('extended', 10)" type="button">Get Top 10</button>
+          <button onClick="choose('extended')" type="button">Rank All Items</button>
+        </div>
         <h4>*Note: Ranking all items will take more comparisons. Totally up to you.</h4>
       </div>
 
       <div id="comparison" class="no-display">
+        <h3>Loading your dataset, please wait.</h3>
+      </div>
+
+      <div id="comparison" class="no-display">
         <h4>Question No. <span id="qn"></span></h4>
-        <div class="bottom choice" onClick="noChoice()">no preference<br /></div>
+        <div class="bottom choice" onClick="tie()">tie<br /></div>
         <div class="equal">
           <div class="row">
-            <div class="left choice" id="left" onClick="chooseLeft()">1</div>
-            <div class="right choice" id="right" onClick="chooseRight()">2</div>
+            <div class="left choice" onClick="chooseLeft()"><div id="left"></div><div id="left-desc"></div></div>
+            <div class="right choice" onClick="chooseRight()"><div id="right"></div><div id="right-desc"></div></div>
           </div>
         </div>
+        <div class="bottom choice" onClick="noChoice()">no preference<br /></div>
       </div>
 
       <hr />

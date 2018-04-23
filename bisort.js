@@ -56,13 +56,14 @@ function PrefList(n, limit) {
 }
 
 var t, c = 0, q;
-var dataset = [1,2,3,4,5,7,6];
+var dataset = [1,2];
 
-$(function(){
-    _getDataset();
-});
 
-function _getDataset() {
+function choose(limit, choiceCategory) {
+    _getDataset(limit, choiceCategory);
+}
+
+function _getDataset(limit, choiceCategory) {
 
     if (window.XMLHttpRequest) {
       // code for IE7+, Firefox, Chrome, Opera, Safari
@@ -73,11 +74,13 @@ function _getDataset() {
     }
     xmlhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
-        dataset = (this.responseText||"").split("::");
+        dataset = (this.responseText||"").split("|");
+        start(limit);
       }
     };
-    xmlhttp.open("GET","./dataset.php", true);
+    xmlhttp.open("GET","./dataset-" + choiceCategory + ".php", true);
     xmlhttp.send();
+    $("#loading").removeClass("no-display");
 }
 
 
@@ -87,6 +90,7 @@ function start(limit) {
     limit = limit || len;
     t = new PrefList(len, limit);
 
+    $("#loading").addClass("no-display");
     $("#info").addClass("no-display");
     $("#comparison").removeClass("no-display");
     $("#update").removeClass("no-display");
@@ -106,8 +110,22 @@ function processQuestion() {
 
 function displayQuestion(q) {
     $("#qn").text(++c);
-    $("#left").text(dataset[q.a]);
-    $("#right").text(dataset[q.b]);
+    aVal = dataset[q.a].split(": ");
+    bVal = dataset[q.b].split(": ");
+
+    $("#left").text(aVal[0]);
+    $("#right").text(bVal[0]);
+
+    if (aVal.length > 1) {
+        $("#left-desc").text(aVal[1]);
+    } else {
+        $("#left-desc").text("");
+    }
+    if (bVal.length > 1) {
+        $("#right-desc").text(bVal[1]);
+    } else {
+        $("#right-desc").text("");
+    }
 }
 
 function chooseLeft() {
@@ -118,6 +136,10 @@ function chooseRight() {
 }
 
 function noChoice() {
+    processAnswer(0);
+}
+
+function tie() {
     processAnswer(0);
 }
 

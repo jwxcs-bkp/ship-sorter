@@ -1,1 +1,21 @@
-Animal-based Dynamics (ABO)::Incest::Daddy/Mommy Dynamics::Fantasy Rape::Anal Sex::Pet Play::Scat::Creampies::Cyber Sex ::Double Penetration::Fisting::Food Play::Gang Bang::Glory-Hole Sex::Golden Showers::Lactation ::Rimming::Phone Sex::Toys ::Talking Dirty::Tickling::BDSM::Exhibitionism::Forced Masturbation::Humiliation::Voyeurism::Being Drugged::Begging/Pleading::Enforced Chastity::Harems::Orgasm control::Piercing::Punishment::Branding::Breath Control::Bites/Bruises (marks on the body)::Temperature Play::Blood Play::Gun Play::Pain::Sensory Deprivation::Spitting::Whipping/Spanking::Cages/Confinement::Restraints/Ropes::Cross Dressing::Lingerie::Uniforms
+NamJin|RM and Jin
+NamGi|RM and Suga
+NamSeok|RM and j-hope
+MinJoon|RM and Jimin
+TaeJoon|RM and V
+NamKook|RM and JK
+YoonJin|Jin and Suga
+2seok|Jin and j-hope
+JinMin|Jin and Jimin
+TaeJin|Jin and V
+JinKook|Jin and JK
+SOPE|Suga and j-hope
+YoonMin|Suga and Jimin
+TaeGi|Suga and V
+YoonKook|Suga and JK
+JiHope|j-hope and Jimin
+VHope|j-hope and V
+HopeKook|j-hope and JK
+VMin|Jimin and V
+JiKook|Jimin and JK
+TaeKook|V and JK
