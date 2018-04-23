@@ -115,7 +115,7 @@ function displayQuestion(q) {
     aHtml = "<br />";
     bHtml = "";
 
-    bHtml += "<small>currently at #" + q.pos + "</small><br />";
+    if (c > 1) bHtml += "<small>currently at #" + q.pos + "</small><br />";
 
     aHtml += aVal[0];
     bHtml += bVal[0];
