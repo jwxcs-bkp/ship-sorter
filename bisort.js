@@ -27,7 +27,7 @@ function PrefList(n, limit) {
         if (this.current.item >= this.size) return null;
         this.current.try = Math.min(this.limit-1, Math.floor((this.current.min + this.current.max) / 2));
 
-        return({a: this.current.item, b: this.items[this.current.try].item});
+        return({a: this.current.item, b: this.items[this.current.try].item, pos: this.current.try+1});
     }
 
     this.getOrder = function() {
@@ -112,8 +112,13 @@ function displayQuestion(q) {
     aVal = dataset[q.a].split(": ");
     bVal = dataset[q.b].split(": ");
 
-    aHtml = aVal[0];
-    bHtml = bVal[0];
+    aHtml = "<br />";
+    bHtml = "";
+
+    bHtml += "<small>currently at #" + q.pos + "</small><br />";
+
+    aHtml += aVal[0];
+    bHtml += bVal[0];
 
     if (aVal.length > 1) {
        aHtml += "<br /><small>" + aVal[1] + "</small>";
